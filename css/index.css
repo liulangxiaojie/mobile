@@ -833,12 +833,14 @@ html{
 
 @-webkit-keyframes slideDown {
     from {
+        opacity: 0.5;
         -webkit-transform: translate3d(0, -20%, 0);
         transform: translate3d(0, -20%, 0);
         visibility: visible;
     }
 
     to {
+        opacity: 0.5;
         -webkit-transform: translate3d(0, 0, 0);
         transform: translate3d(0, 0, 0);
     }
