@@ -168,14 +168,12 @@ html{
     left: 0;
     width: 100%;
     height: 86%;
-    opacity: 0;
 }
 .slide2 img:nth-child(3){
     top: 0;
     left: 0;
     width: 100%;
     height: 86.4%;
-    opacity: 0;
 }
 .slide2 p:nth-child(4){
     position: absolute;
@@ -591,6 +589,7 @@ html{
     width: 4.3rem;
     height: 4rem;
     z-index: 1;
+    opacity: 0;
 }
 .slide6 p:nth-child(1){
     top: 2rem;
@@ -598,6 +597,7 @@ html{
     width: 4.3rem;
     height: 4rem;
     z-index: 1;
+    opacity: 0;
 }
 .slide6 p:nth-child(2){
     position: absolute;
@@ -610,7 +610,8 @@ html{
     line-height: 1.28rem;
     color: #fff;
     font-family: defaultFont;
-    font-weight: bold
+    font-weight: bold;
+    opacity: 0;
 }
 .slide6 p:nth-child(3){
     position: absolute;
@@ -623,7 +624,8 @@ html{
     line-height: 1.28rem;
     color: #fff;
     font-family: defaultFont;
-    font-weight: bold
+    font-weight: bold;
+    opacity: 0;
 }
 .slide6 p:nth-child(4){
     position: absolute;
@@ -636,6 +638,7 @@ html{
     line-height: 1.28rem;
     color: #fff;
     font-family: defaultFont;
+    opacity: 0;
 }
 .slide6 p:nth-child(5){
     position: absolute;
@@ -646,7 +649,8 @@ html{
     line-height: 1.28rem;
     color: #fff;
     font-family: defaultFont;
-    font-weight: bold
+    font-weight: bold;
+    opacity: 0;
 }
 .slide6 p:nth-child(6){
     position: absolute;
@@ -661,6 +665,7 @@ html{
     z-index: 1;
     text-align: center;
     background: rgba(0,0,0,.5);
+    opacity: 0;
 }
 .slide6 p:nth-child(7){
     position: absolute;
@@ -675,6 +680,7 @@ html{
     z-index: 1;
     text-align: center;
     background: rgba(0,0,0,.5);
+    opacity: 0;
 }
 .slide6 p .qq{
     display: inline-block;
@@ -741,6 +747,37 @@ html{
     100% {
         -webkit-transform: perspective(400px);
         transform: perspective(400px);
+        opacity: 1
+    }
+}
+
+@keyframes puffInX{
+    0% {
+        -webkit-transform: perspective(400px) rotate3d(1,0,0,90deg);
+        transform: perspective(400px) rotate3d(1,0,0,90deg);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+        opacity: 0;
+    }
+    40% {
+        -webkit-transform: perspective(400px) rotate3d(1,0,0,-20deg);
+        transform: perspective(400px) rotate3d(1,0,0,-20deg);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+    60% {
+        -webkit-transform: perspective(400px) rotate3d(1,0,0,10deg);
+        transform: perspective(400px) rotate3d(1,0,0,10deg);
+        opacity: 1;
+    }
+    80% {
+        -webkit-transform: perspective(400px) rotate3d(1,0,0,-5deg);
+        transform: perspective(400px) rotate3d(1,0,0,-5deg);
+    }
+    100% {
+        -webkit-transform: perspective(400px);
+        transform: perspective(400px);
+        opacity: 1
     }
 }
 
@@ -761,12 +798,14 @@ html{
 
 @-webkit-keyframes slideUp {
     from {
+        opacity: .5;
         -webkit-transform: translate3d(0, 20%, 0);
         transform: translate3d(0, 20%, 0);
         visibility: visible;
     }
 
     to {
+        opacity: .5;
         -webkit-transform: translate3d(0, 0, 0);
         transform: translate3d(0, 0, 0);
     }
