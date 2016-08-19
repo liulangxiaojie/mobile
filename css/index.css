@@ -168,14 +168,14 @@ html{
     left: 0;
     width: 100%;
     height: 86%;
-    opacity: .5;
+    opacity: 0;
 }
 .slide2 img:nth-child(3){
     top: 0;
     left: 0;
     width: 100%;
     height: 86.4%;
-    opacity: .5;
+    opacity: 0;
 }
 .slide2 p:nth-child(4){
     position: absolute;
@@ -193,7 +193,7 @@ html{
 }
 .slide2 p:nth-child(5){
     position: absolute;
-    top: 7rem;
+    top: 6.5rem;
     left: .7rem;
     width: 3.3rem;
     height: .8rem;
@@ -209,7 +209,7 @@ html{
 }
 .slide2 p:nth-child(6){
     position: absolute;
-    top: 8.2rem;
+    top: 7.6rem;
     left: .7rem;
     width: 3.3rem;
     height: .8rem;
@@ -225,7 +225,7 @@ html{
 }
 .slide2 p:nth-child(7){
     position: absolute;
-    top: 9.4rem;
+    top: 8.7rem;
     left: .7rem;
     width: 3.3rem;
     height: .8rem;
@@ -475,7 +475,7 @@ html{
     z-index: 1;
 }
 .slide5 img:nth-child(6){
-    top: 4.7rem;
+    top: 4.2rem;
     left: 3.15rem;
     width: 0.4rem;
     height: .26rem;
@@ -483,7 +483,7 @@ html{
 }
 .slide5 p:nth-child(7){
     position: absolute;
-    top: 4.6rem;
+    top: 4.2rem;
     left: 3.7rem;
     width: 2.4rem;
     height: .8rem;
@@ -493,7 +493,7 @@ html{
     color: #fff;
 }
 .slide5 img:nth-child(8){
-    top: 6.8rem;
+    top: 6rem;
     left: 3rem;
     width: 0.4rem;
     height: .26rem;
@@ -501,7 +501,7 @@ html{
 }
 .slide5 p:nth-child(9){
     position: absolute;
-    top: 6.8rem;
+    top: 6rem;
     left: 0.45rem;
     width: 2.4rem;
     height: .8rem;
@@ -512,7 +512,7 @@ html{
     text-align: right;
 }
 .slide5 img:nth-child(10){
-    top: 9rem;
+    top: 8rem;
     left: 3.15rem;
     width: 0.4rem;
     height: .26rem;
@@ -520,7 +520,7 @@ html{
 }
 .slide5 p:nth-child(11){
     position: absolute;
-    top: 9rem;
+    top: 8rem;
     left: 3.7rem;
     width: 2.4rem;
     height: .8rem;
@@ -528,6 +528,12 @@ html{
     font-size: .24rem;
     line-height: .4rem;
     color: #fff;
+}
+.slide5 p{
+    opacity: 0;
+}
+.slide5 p span{
+    display: block;
 }
 
 #page5 img:nth-child(1) {
@@ -644,7 +650,7 @@ html{
 }
 .slide6 p:nth-child(6){
     position: absolute;
-    top: 7.5rem;
+    top: 7rem;
     left: .8rem;
     width: 4.74rem;
     height: .78rem;
@@ -658,7 +664,7 @@ html{
 }
 .slide6 p:nth-child(7){
     position: absolute;
-    top: 9rem;
+    top: 8.2rem;
     left: .8rem;
     width: 4.74rem;
     height: .78rem;
@@ -768,12 +774,14 @@ html{
 
 @keyframes slideUp {
     from {
+        opacity: .5;
         -webkit-transform: translate3d(0, 20%, 0);
         transform: translate3d(0, 20%, 0);
         visibility: visible;
     }
 
     to {
+        opacity: .5;
         -webkit-transform: translate3d(0, 0, 0);
         transform: translate3d(0, 0, 0);
     }
@@ -799,12 +807,14 @@ html{
 
 @keyframes slideDown {
     from {
+        opacity: 0.5;
         -webkit-transform: translate3d(0, -20%, 0);
         transform: translate3d(0, -20%, 0);
         visibility: visible;
     }
 
     to {
+        opacity: 0.5;
         -webkit-transform: translate3d(0, 0, 0);
         transform: translate3d(0, 0, 0);
     }
